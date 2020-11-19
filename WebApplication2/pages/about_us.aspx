@@ -212,8 +212,8 @@
         <div class="container shadow" style="padding-top: 2%; padding-bottom: 2%; margin: 10px 0px; -moz-border-radius: 15px; border-radius: 30px;">
             <div class="row" style="">
                 <video class="  col-md-12 col-sm-7" width="620" height="420" autoplay style="margin: 10px auto;">
-                    <source src="../images/entrance.mp4" type="video/mp4">
-                    <source src="../images/entrance.ogg" type="video/ogg">
+                    <source src="../images/MyVideo.mp4" type="video/mp4">
+                    <source src="../images/MyVideo.ogg" type="video/ogg">
                 </video>
                 <div class=" col-sm-10 col-md-12 table-responsive-md " style="/*margin-top: 3%; margin-bottom: 5%; margin-left: 2%; margin-right: 2%; padding-left: 1%; */ font-family: 'Lucida Sans Typewriter'; font-size: larger">
                     <div class="row text-center" style="margin-top: 50px; margin-bottom: 40px;">
