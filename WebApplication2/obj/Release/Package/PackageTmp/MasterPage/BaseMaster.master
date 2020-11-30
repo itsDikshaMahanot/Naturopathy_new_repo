@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BaseMaster.master.cs" Inherits="WebApplication2.MasterPage.BaseMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/bootstrap.css" /> 
+    <link rel="stylesheet" href="../styles/all.css" />
+    <link rel="stylesheet" href="../styles/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: olivedrab;
+            color: white;
+        }
+
+
+        @media only screen and (max-width:1000px) {
+            /* For tablets: */
+            .container, .container-fluid, .navbar, .navbar-header, #image1 {
+                width: 80%;
+                padding: 0;
+            }
+
+            .container, .container-fluid, .navbar, .navbar-header, #image1 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            /* For mobile phones: */
+            .container, .container-fluid, .navbar, .navbar-header, #image1 {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        function pageRedirect() {
+            window.location.href = "about_us.aspx";
+        }
+
+        $('.navbar-nav>li>').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <nav class="navbar navbar-inverse navbar-expand-sm navbar-light sticky-top" style="background-color: darkgreen; z-index:2">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <asp:Image ID="Image1" runat="server" Height="50px" ImageUrl="~/images/logo1.png"  Width="50px" />
+                    <a class="w3schools-logo notranslate"></a>
+                    <span>&nbsp<a class="navbar-brand" href="#" style="color: #FFFFFF">Ayushman Naturopathy Center</a></span>
+                </div>
+                <button id="nav-btn" class="navbar-toggler navbar-toggler-right" style="width:20%; margin-top:1%; margin-bottom:1%;" type="button"  data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="nav navbar-nav navbar-right" style="right: 0; margin-right: 20px; position: absolute;">
+                        <li class="nav-item">
+                            <asp:Button ID="button1" runat="server" CssClass="btn btn-outline-light w3-round-large" Text="Home" OnClick="button2_Click" />
+                        </li>
+                        &nbsp  
+                        <li class="nav-item">
+                            <asp:Button ID="button2" runat="server" CssClass="btn btn-outline-light w3-round-large" Text="Services" OnClick="Button1_Click1" />
+                        </li>   
+                         &nbsp  
+                        <li class="nav-item">
+                            <asp:Button ID="button3" runat="server" CssClass="btn btn-outline-light w3-round-large" Text="Gallery" OnClick="Button3_Click" />
+                        </li>  
+                        </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="height: 80%; position: relative; padding-left: 0px; padding-right: 0px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer" style="position: absolute; bottom: auto">
+            <div class="badge-success navbar-light sticky-bottom" style="margin-bottom: 0; bottom: 0; position: sticky; background-color: darkgreen; padding-top: 1%">
+                <div class="col-md-12 col-sm-10 row" style="height: 50%; padding-left: 1%; padding-right: 1%">
+                    <div class="col order-1">
+                        <h5 class="fa fa-address-book"><span>Our Address </span></h5>
+                        <address>
+                            70/47, Patel Marg<br />
+                            Mansarovar,Jaipur<br />
+                            Rajasthan,302020
+                            <br />
+                        </address>
+                    </div>
+                    <div class="col-7 order-last" style="text-align: end">
+                        Dr Sonal Chopra<br />
+                        <a class="fa fa-phone"><span>+91 9571763035 </span></a>
+                        <br />
+                        <a class="fa fa-phone"><span>+91 9024906293 </span></a>
+                        <br />
+                        <a class="fa fa-envelope"><span>ayushmannaturopathycenter@gmail.com </span></a>
+                        <br />
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="text-center order-last" style="padding-bottom: 0.5%">
+                        <a class="btn btn-light fa fa-facebook-square" href="http://www.facebook.com/profile.php?id=" style="font-size: xx-large;"></a>
+                        <a class="btn btn-light rounded fa fa-instagram" href="https://www.instagram.com/" style="font-size: xx-large;"></a>
+                        <a class="btn btn-light fa fa-envelope" href="mailto:" style="font-size: xx-large;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+</body>
+   
+
+</html>

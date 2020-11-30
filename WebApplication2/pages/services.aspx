@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
 
     <style>
-        #header {
+        .header {
             background-color: floralwhite;
             width: 100%;
             height: auto;
@@ -37,11 +37,32 @@
                 bottom: 10px;
                 left: 180px;
             }
+
+
+        @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .container, .container-fluid ,.flip {
+                width: 80%;
+                padding: 0;
+            }
+
+            .container, .container-fluid, .flip {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            /* For mobile phones: */
+            .container,.flip {
+                width: 100%;
+                
+            }
+        }
     </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="header" style="padding-left: 1%;">
+    <div class="header" style="padding-left: 1%;">
         <div class="card container col-md-12 col-sm-12" style="padding-top: 1%; background-color: floralwhite">
             <h1 style="padding-left: 2%; font-family: 'Times New Roman', Times, serif">Diseases Cured</h1>
             <ul class="card-columns" style="font-family: 'Bookman Old Style';">

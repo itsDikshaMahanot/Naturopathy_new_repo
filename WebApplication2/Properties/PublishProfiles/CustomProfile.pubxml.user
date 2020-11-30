@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFPLsjE3jJE+G93KyKi9psgAAAAACAAAAAAAQZgAAAAEAACAAAABIKaS0xhORigf+lbCUkNWfkxgvn/SUsCkZyRn1h1yzZgAAAAAOgAAAAAIAACAAAAA8w2+8fkxJQwVv07HLf/T9VpeYPmg/dp5sWenNmG0GmSAAAADllVGri5KRje1zG7t5D/yArO3WfWeO5YQ7814oxR0nUkAAAABnfPtlfODIKeYicIX2sUpR2UtCUUj06SQ9WSyqNJVSajmYNrmXh3yoLkTBMCn6rAfgcjAKWyHcRZKe853ICcjF</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ayushmannaturopathycenter.com</_PublishTargetUrl>
+  </PropertyGroup>
+</Project>

@@ -17,17 +17,17 @@ namespace WebApplication2.MasterPage
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("services.aspx");
+            Response.Redirect("/pages/services.aspx");
         }
 
         protected void button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("about_us.aspx");
+            Response.Redirect("/Index.aspx");
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            Response.Redirect("gallery.aspx");
+            Response.Redirect("/pages/gallery.aspx");
         }
 
         protected void Button4_Click(object sender, EventArgs e)

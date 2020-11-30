@@ -40,6 +40,33 @@
             background-size: cover;
             align-content:center;
         }
+
+        @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .container, .container-fluid,.header,.row ,. gallery, .gallery2{
+                width: 80%;
+                padding: 0;
+            }
+
+            .container, .container-fluid, .header, .row ,.gallery, .gallery2{
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            /* For mobile phones: */
+            .container, .container-fluid {
+                width: 100%;
+                padding-top: 0.5%;
+                padding-bottom: 4%;
+            }
+
+            .gallery, .gallery2, .shadow, .shadow-lg {
+                width: 70%;
+                height: 35%;
+            }
+        }
+        
     </style>
 
 </asp:Content>
@@ -68,16 +95,11 @@
                 <img class="gallery2" src="../images/IMG_20200919_205119.jpg"style="margin: 0px 15px;" />
                 <img class="gallery2" src="../images/IMG_20200919_213113.jpg" style="margin: 0px 15px;" />
             </div>
-        </div>  
-        <%--<div class="row">
-            <div class="container" style="margin:30px auto">
-                <img class="gallery2" src="../images/IMG_20200919_204036.jpg" style="margin: 0px 15px;" />                         
-            </div>
-        </div>--%>
-        <div class="row">
-            <div class="container"style="margin-top:1%; margin-bottom:10%;" >               
-                <img class="shadow shadow-lg" src="../images/dietChart.jpg" style="  margin-left:10%; height:105%; width:33%; border-radius:20px;" />
-               <img class="shadow shadow-lg" src="../images/IMG_20200919_204036.jpg" style="margin: 0px 60px; height:105%; width:33%; border-radius:20px;" />
+        </div>      
+        <div id=" img1 " class="row">
+            <div class="container"style="margin-top:1%; margin-bottom:1%;  overflow:auto;" >               
+                <img class="shadow shadow-lg" src="../images/dietChart.jpg" style="margin: 0px 60px;  height:100%; width:33%; border-radius:20px;" />
+               <img class="shadow shadow-lg" src="../images/IMG_20200919_204036.jpg" style="margin: 0px 60px; height:100%; width:33%; border-radius:20px;" />
                  <%--<img class="" src="../images/IMG_20200818_160757(1).jpg" style="margin: 0px 1px; height:105%; width:33%;border-radius:20px; border-collapse:separate; border-color:lightsalmon" />           --%>
             </div>
         </div>       

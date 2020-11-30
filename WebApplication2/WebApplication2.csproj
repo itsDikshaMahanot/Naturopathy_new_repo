@@ -168,8 +168,19 @@
     <Content Include="images\shirodhara.png" />
     <Content Include="images\steam.jpg" />
     <Content Include="MasterPage\BaseMaster.master" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy2.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy3.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy4.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy5.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy6.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy7.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy8.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="pages\about_us.aspx" />
+    <Content Include="Index.aspx" />
     <Content Include="pages\diet.aspx" />
     <Content Include="pages\gallery.aspx" />
     <Content Include="pages\services.aspx" />
@@ -226,12 +237,12 @@
     <Compile Include="MasterPage\BaseMaster.master.designer.cs">
       <DependentUpon>BaseMaster.master</DependentUpon>
     </Compile>
-    <Compile Include="pages\about_us.aspx.cs">
-      <DependentUpon>about_us.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\about_us.aspx.designer.cs">
-      <DependentUpon>about_us.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\diet.aspx.cs">
       <DependentUpon>diet.aspx</DependentUpon>

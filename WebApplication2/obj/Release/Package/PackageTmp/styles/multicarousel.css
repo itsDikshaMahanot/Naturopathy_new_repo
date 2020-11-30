@@ -1,0 +1,34 @@
+﻿/*.col-md-3 {
+    display: inline-block;
+    margin-left: -4px;
+}*/
+.size {
+    width: 200px;
+    height:200px;
+        }
+
+/*body .carousel-indicators  li {
+   
+}*/
+
+/*.carousel-indicators li {
+    bottom: 0;
+    background-color: lightgreen;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: lightgrey;
+}*/
+
+body .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+    margin:10px 110px;
+   
+}
+
+/*img .size{
+    width:900px;
+    height:599px;
+}*/
