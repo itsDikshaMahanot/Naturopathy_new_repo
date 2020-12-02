@@ -39,7 +39,7 @@
             }
 
 
-        @media only screen and (max-width:1000px) {
+        @media only screen and (max-width:800px) {
             /* For tablets: */
             .container, .container-fluid ,.flip {
                 width: 80%;

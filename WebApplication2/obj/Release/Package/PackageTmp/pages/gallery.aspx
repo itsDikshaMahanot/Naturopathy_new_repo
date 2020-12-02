@@ -1,18 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/BaseMaster.master" AutoEventWireup="true" CodeBehind="gallery.aspx.cs" Inherits="WebApplication2.pages.gallery" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="../styles/w3.css" />
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/w3.css" />   
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../styles/multicarousel.css" />
-    <link rel="stylesheet" href="../styles/content.css" />
-    <link rel="stylesheet" href="../styles/bootstrap.css" />
+    <link rel="stylesheet" href="../styles/card.css" />    
     <link rel="stylesheet" href="../styles/bootstrap.min.css" />
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="../Scripts/counter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -41,67 +36,100 @@
             align-content:center;
         }
 
-        @media only screen and (max-width:1000px) {
+        @media only screen and (max-width:800px) {
             /* For tablets: */
-            .container, .container-fluid,.header,.row ,. gallery, .gallery2{
+            .container, .container-fluid ,.flip {
                 width: 80%;
                 padding: 0;
             }
 
-            .container, .container-fluid, .header, .row ,.gallery, .gallery2{
+            .container, .container-fluid, .flip {
                 width: 100%;
             }
         }
 
-        @media only screen and (max-width:600px) {
+        @media only screen and (max-width:650px) {
             /* For mobile phones: */
-            .container, .container-fluid {
+            .container,.flip {
                 width: 100%;
-                padding-top: 0.5%;
-                padding-bottom: 4%;
+                
             }
-
-            .gallery, .gallery2, .shadow, .shadow-lg {
-                width: 70%;
-                height: 35%;
-            }
-        }
-        
+        }       
     </style>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="header">
-        <div class="row">
-            <div class="container" style="margin:30px auto">
-                <img class="gallery" src="../images/IMG_20200919_221705.jpg" style="margin: 0px 15px;" />
-                <img class="gallery" src="../images/IMG_20200919_205119.jpg" style="margin: 0px 15px;" />
-                <img class="gallery" src="../images/IMG_20200919_220233.jpg" style="margin: 0px 15px;" />
-                <img class="gallery" src="../images/IMG_20200919_205639.jpg" style="margin: 0px 15px;" />
+    <div class=" " style="padding-left: 1%; padding-top: 1%">
+            <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_221705.jpg); height: 300px">
+                    <%--<h1 class="text-shadow" style="padding-top: 60%; font-family: Cambria">Aroma Therapy</h1>--%>
+                </div>               
             </div>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_205119.jpg); height: 300px">
+                </div>
+            </div>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_220233.jpg); height: 300px">
+                </div>
+            </div>
+         <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_205639.jpg); height: 300px">
+                </div>
+            </div>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_215540.jpg); height: 300px">
+                </div>
+            </div>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_220331.jpg); height: 300px">
+                </div>
+            </div>
+        <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/images.jpg); height: 300px">
+                </div>
+            </div>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_220331.jpg); height: 300px">
+                </div>
+            </div>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_204010.jpg); height: 300px">
+                </div>
+            </div>
+        <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_215311.jpg); height: 300px">
+                </div>
+            </div>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_213113.jpg); height: 300px">
+                </div>
+            </div>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/dietChart.jpg); height: 300px">
+                </div>
+            </div>
+        <div class="flip">
+                <div class="card1" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0)) , url(../images/IMG_20200919_204036.jpg); height: 300px">
+                </div>
+            </div>
+
         </div>
-        <div class="row">
-            <div class="container" style="margin:30px auto">
-                <img class="gallery" src="../images/IMG_20200919_215540.jpg" style="margin: 0px 15px;" />
-                <img class="gallery" src="../images/IMG_20200919_220331.jpg" style="margin: 0px 15px;" />
-                <img class="gallery" src="../images/images.jpg" style="margin: 0px 15px;" />
-                <img class="gallery" src="../images/IMG_20200919_220331.jpg" style="margin: 0px 15px;" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="container" style="margin:30px auto">
-                <img class="gallery2" src="../images/IMG_20200919_204010.jpg" style="margin: 0px 15px;" />
-                <img class="gallery2"src="../images/IMG_20200919_215311.jpg" style="margin: 0px 15px;" />
-                <img class="gallery2" src="../images/IMG_20200919_205119.jpg"style="margin: 0px 15px;" />
-                <img class="gallery2" src="../images/IMG_20200919_213113.jpg" style="margin: 0px 15px;" />
-            </div>
-        </div>      
-        <div id=" img1 " class="row">
-            <div class="container"style="margin-top:1%; margin-bottom:1%;  overflow:auto;" >               
-                <img class="shadow shadow-lg" src="../images/dietChart.jpg" style="margin: 0px 60px;  height:100%; width:33%; border-radius:20px;" />
-               <img class="shadow shadow-lg" src="../images/IMG_20200919_204036.jpg" style="margin: 0px 60px; height:100%; width:33%; border-radius:20px;" />
+   <%-- <div class="header">
+           
+              
+       
+               <img class="shadow shadow-lg" src="" style="margin: 0px 60px; height:100%; width:33%; border-radius:20px;" />
                  <%--<img class="" src="../images/IMG_20200818_160757(1).jpg" style="margin: 0px 1px; height:105%; width:33%;border-radius:20px; border-collapse:separate; border-color:lightsalmon" />           --%>
-            </div>
+           <%-- </div>
         </div>       
-    </div>
+    </div>--%>
 </asp:Content>

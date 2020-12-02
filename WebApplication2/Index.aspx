@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="../styles/bootstrap.css" />
     <link rel="stylesheet" href="../styles/bootstrap.min.css" />
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
     <script src="../Scripts/counter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -64,20 +62,23 @@
 
         @media only screen and (max-width:800px) {
             /* For tablets: */
-            .container, .container-fluid {
+            .container, .container-fluid, .frame1 {
                 width: 80%;
                 padding: 0;
             }
 
-            .container, .container-fluid {
+            .container, .container-fluid , .frame1 {
                 width: 100%;
             }
         }
 
         @media only screen and (max-width:650px) {
             /* For mobile phones: */
-            .container, .container-fluid {
+            .container, .container-fluid,  {
                 width: 100%;
+            }
+            .frame1{
+                width:50%;
             }
         }
 
@@ -138,9 +139,11 @@
             <div id="form" class="container row" style="text-align: center; padding-bottom: 4%; text-decoration: solid;">
                 <div class="col-sm-3" style="color: darkblue; font-size: 150%; margin-left: 15%; margin-top: 2.5%; text-align: center; text-decoration: solid; font-family: 'Bookman Old Style'; font-style: unset;">
                     Click Here  <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                </div>
-                <a class=" alink" href="https://docs.google.com/forms/d/e/1FAIpQLSdgbU-TcgCsCkpwzeOzgDYd6XngeNNvcI94c7-T02aFT1uYQw/viewform?vc=0&c=0&w=1&flr=0" style="font-size: 200%; padding: 2%; font-family: cursive;">Personalised Diet</a>
+                </div>              
+                <a target="frame1" class=" alink" href="https://script.google.com/macros/s/AKfycbzPfSdWV_Vdaz8eu9NtRbgGgvUZT23qgS4gqGhVLZ1e2PqhsDc/exec?action=sign&formId=1iro7C5JvHi_W8Zf0h8PoNmNEzYEuPu3yXtRtANVbMmg&editor=U2FsdGVkX1%2FggBW0bH2BkEC6nGpKr8pWkV8BXqT1NC%2BV1zUJF%2BOSrBYem4bousqf" style="font-size: 200%; padding: 2%; font-family: cursive;">Personalised Diet</a>
+       <%--          <a class="btn btn-light " href="/pages/form.aspx" style="font-size: x-large;z-index: 2; position: relative;" aria-dropeffect="move" aria-expanded="undefined"> DIET </a>--%>
             </div>
+            
         </div>
 
         <div class="container col-md-12 col-sm-12" style="margin: 2% 0">
@@ -203,8 +206,8 @@
         <div class=" shadow" style="padding-top: 2%; padding-bottom: 2%; margin: 10px 0px; -moz-border-radius: 15px; border-radius: 30px;">
             <div class="row" style="">
                 <video class="  col-md-12 col-sm-7" width="620" height="420" autoplay style="margin: 10px auto;">
-                    <source src="../images/MyVideo.mp4" type="video/mp4">
-                    <source src="../images/MyVideo.ogg" type="video/ogg">
+                    <source src="images/myVideo.mp4" type="video/mp4">
+                    <source src="images/MyVideo.ogg" type="video/ogg">
                 </video>
                 <%--<div class=" col-sm-10 col-md-12 table-responsive-md " style="/*margin-top: 3%; margin-bottom: 5%; margin-left: 2%; margin-right: 2%; padding-left: 1%; */ font-family: 'Lucida Sans Typewriter'; font-size: larger">
                     <div class="row text-center" style="margin-top: 50px; margin-bottom: 40px;">

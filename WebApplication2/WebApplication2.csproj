@@ -177,15 +177,16 @@
     <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy6.pubxml" />
     <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy7.pubxml" />
     <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy8.pubxml" />
+    <None Include="Properties\PublishProfiles\ayushmannaturopathycenter.com - Web Deploy9.pubxml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Index.aspx" />
     <Content Include="pages\diet.aspx" />
+    <Content Include="pages\form.aspx" />
     <Content Include="pages\gallery.aspx" />
     <Content Include="pages\services.aspx" />
-    <Content Include="pages\WebForm1.aspx" />
-    <Content Include="pages\WebForm2.aspx" />
+    <Content Include="pages\carousel.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\counter.js" />
@@ -251,6 +252,13 @@
     <Compile Include="pages\diet.aspx.designer.cs">
       <DependentUpon>diet.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pages\form.aspx.cs">
+      <DependentUpon>form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\form.aspx.designer.cs">
+      <DependentUpon>form.aspx</DependentUpon>
+    </Compile>
     <Compile Include="pages\gallery.aspx.cs">
       <DependentUpon>gallery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -265,19 +273,12 @@
     <Compile Include="pages\services.aspx.designer.cs">
       <DependentUpon>services.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pages\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="pages\carousel.aspx.cs">
+      <DependentUpon>carousel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="pages\WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="pages\carousel.aspx.designer.cs">
+      <DependentUpon>carousel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -2,13 +2,12 @@
     /*background-image: url('../images/rainbow.jpg');
     background-size:cover;
     background-repeat:no-repeat;*/
-    background-color:floralwhite;
-    
-    
+    background-color: floralwhite;
 }
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;    
+    max-width: 300px;
     text-align: center;
     font-family: arial;
 }
@@ -16,7 +15,7 @@
 .price {
     color: grey;
     font-size: 22px;
-    text-align:center;
+    text-align: center;
 }
 
 .card button {
@@ -35,9 +34,35 @@
         opacity: 0.7;
     }
 
-    li{
-        text-align:center;
-        font-size:medium;
+li {
+    text-align: center;
+    font-size: medium;
+}
+
+
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+    padding-right: 2%;
+}
+
+    .flip > .card1 {
+        display: block;
+        text-align: center;
+        width: inherit;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 320px;
+        padding: 1em 1em;
+        background: #f0f5f5;
+        border-radius: 10px;
     }
 
-
+.cardflip {
+    position: relative;
+    display: block;
+  
+}
