@@ -24,6 +24,7 @@
             width: 100%;
             background-color: olivedrab;
             color: white;
+            overflow-x: hidden;
         }
 
 
@@ -46,14 +47,14 @@
             }
 
             .navbar-nav, .row {
-                
                 margin-top: 0px;
-                margin-left:35px;
-                margin-bottom:5px;
+                margin-left: 35px;
+                margin-bottom: 5px;
             }
-            .row > li{
-                margin-right:15px;
-            }
+
+                .row > li {
+                    margin-right: 15px;
+                }
         }
     </style>
 
@@ -87,7 +88,7 @@
                 <div class="navbar-nav" id="collapsibleNavbar">
                     <ul class="nav navbar-nav navbar-right" style="right: 0; margin-right: 5px;">
                         <div class="row">
-                            <li class="nav-item" >
+                            <li class="nav-item">
                                 <asp:Button ID="button1" runat="server" CssClass="btn btn-outline-light w3-round-large " Text="Home" OnClick="button2_Click" />
                             </li>
                             &nbsp  
@@ -109,38 +110,58 @@
             </asp:ContentPlaceHolder>
         </div>
 
-        <div class="footer" style="position: absolute; bottom: auto">
-            <div class="badge-success navbar-light sticky-bottom" style="margin-bottom: 0; bottom: 0; position: sticky; background-color: darkgreen; padding-top: 1%">
-                <div class="col-md-12 col-sm-10 row" style="height: 50%; padding-left: 1%; padding-right: 1%">
-                    <div class="col order-1">
-                        <h5 class="fa fa-address-book"><span>Our Address </span></h5>
+        <!-- Footer -->
+        <footer class="page-footer font-small  pt-4" style="background-color:darkgreen">
+            <!-- Footer Text -->
+            <div class="container-fluid text-center text-md-left">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3" style="color:whitesmoke">
+                        <!-- Content -->
+                        <h5 class="fa fa-address-book"><span> Our Address </span></h5>
                         <address>
                             70/47, Patel Marg<br />
                             Mansarovar,Jaipur<br />
                             Rajasthan,302020
                             <br />
                         </address>
-                    </div>
-                    <div class="col-7 order-last" style="text-align: end">
-                        Dr Sonal Chopra<br />
-                        <a class="fa fa-phone" href="tel:+91 9571763035" style="color: whitesmoke"><span>+91 9571763035 </span></a>
-                        <br />
-                        <a class="fa fa-phone" href="tel:+91 9024906293" style="color: whitesmoke"><span>+91 9024906293</span></a>
-                        <br />
-                        <a class="fa fa-envelope" href="mailto: ayushmannaturopathycenter@gmail.com" style="color: whitesmoke"><span>ayushmannaturopathycenter@gmail.com </span></a>
-                        <br />
 
                     </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mb-md-0 mb-3 text-md-right" style="color:whitesmoke">
+                        <!-- Content -->
+                         Dr Sonal Chopra<br />
+                        <a class="fa fa-phone" href="tel:+91 9571763035" style="color: whitesmoke"><span> +91 9571763035 </span></a>
+                        <br />
+                        <a class="fa fa-phone" href="tel:+91 9024906293" style="color: whitesmoke"><span> +91 9024906293</span></a>
+                        <br />
+                        <a class="fa fa-envelope" href="mailto: ayushmannaturopathycenter@gmail.com" style="color: whitesmoke"><span> ayushmannaturopathycenter@gmail.com </span></a>
+                        <br />  
+                    </div>
+                    <!-- Grid column -->
+
                 </div>
-                <div class="col-12 col-md-12">
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Text -->
+             <div class="col-12 col-md-12" style="padding-bottom:0.5%">
                     <div class="text-center order-last" style="padding-bottom: 0.5%">
                         <a class="btn btn-light fa fa-facebook-square" href="https://www.facebook.com/Ayushman-Naturopathy-Center-255063492230174" style="font-size: xx-large;"></a>
                         <a class="btn btn-light rounded fa fa-instagram" href="https://www.instagram.com/ayushmannaturopathy/" style="font-size: xx-large;"></a>
                         <a class="btn btn-light fa fa-envelope" href="mailto: ayushmannaturopathycenter@gmail.com" style="font-size: xx-large;"></a>
                     </div>
                 </div>
-            </div>
-        </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                © AyushmanNaturopathyCenter
+             </div>
+            <!-- Copyright -->
+        </footer>
     </form>
 
 </body>

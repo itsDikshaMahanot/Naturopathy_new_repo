@@ -77,9 +77,10 @@
             .container, .container-fluid,  {
                 width: 100%;
             }
-            .frame1{
-                width:50%;
-            }
+            
+        }
+        body {
+            overflow-x: hidden;
         }
 
             #myBtn {
@@ -140,7 +141,7 @@
                 <div class="col-sm-3" style="color: darkblue; font-size: 150%; margin-left: 15%; margin-top: 2.5%; text-align: center; text-decoration: solid; font-family: 'Bookman Old Style'; font-style: unset;">
                     Click Here  <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </div>              
-                <a target="frame1" class=" alink" href="https://script.google.com/macros/s/AKfycbzPfSdWV_Vdaz8eu9NtRbgGgvUZT23qgS4gqGhVLZ1e2PqhsDc/exec?action=sign&formId=1iro7C5JvHi_W8Zf0h8PoNmNEzYEuPu3yXtRtANVbMmg&editor=U2FsdGVkX1%2FggBW0bH2BkEC6nGpKr8pWkV8BXqT1NC%2BV1zUJF%2BOSrBYem4bousqf" style="font-size: 200%; padding: 2%; font-family: cursive;">Personalised Diet</a>
+                <a class="alink" href="https://docs.google.com/forms/d/e/1FAIpQLSdgbU-TcgCsCkpwzeOzgDYd6XngeNNvcI94c7-T02aFT1uYQw/viewform?usp=sf_link" style="font-size: 200%; padding: 2%; font-family: cursive;">Personalised Diet</a>
        <%--          <a class="btn btn-light " href="/pages/form.aspx" style="font-size: x-large;z-index: 2; position: relative;" aria-dropeffect="move" aria-expanded="undefined"> DIET </a>--%>
             </div>
             
