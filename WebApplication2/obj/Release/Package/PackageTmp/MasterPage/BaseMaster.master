@@ -155,41 +155,12 @@
                         <a class="btn btn-light fa fa-envelope" href="mailto: ayushmannaturopathycenter@gmail.com" style="font-size: xx-large;"></a>
                     </div>
                 </div>
-
             <!-- Copyright -->
             <div class="footer-copyright text-center py-3">
                 © AyushmanNaturopathyCenter
+             </div>
             <!-- Copyright -->
-
         </footer>
-        <!-- Footer -->
-
-        <%--<div class="footer" style="position: absolute; bottom: auto">
-            <div class="badge-success navbar-light sticky-bottom" style="margin-bottom: 0; bottom: 0; position: sticky; background-color: darkgreen; padding-top: 1%">
-                <div class="col-md-12 col-sm-1" style="height: 50%; padding-left: 1%; padding-right: 1%">
-                    <div class="col-5">
-                        <h5 class="fa fa-address-book"><span>Our Address </span></h5>
-                        <address>
-                            70/47, Patel Marg<br />
-                            Mansarovar,Jaipur<br />
-                            Rajasthan,302020
-                            <br />
-                        </address>
-                    </div>
-                    <div class="col-12 order-last" style="text-align: end">
-                       
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-12" style="padding-bottom:0.5%">
-                    <div class="text-center order-last" style="padding-bottom: 0.5%">
-                        <a class="btn btn-light fa fa-facebook-square" href="https://www.facebook.com/Ayushman-Naturopathy-Center-255063492230174" style="font-size: xx-large;"></a>
-                        <a class="btn btn-light rounded fa fa-instagram" href="https://www.instagram.com/ayushmannaturopathy/" style="font-size: xx-large;"></a>
-                        <a class="btn btn-light fa fa-envelope" href="mailto: ayushmannaturopathycenter@gmail.com" style="font-size: xx-large;"></a>
-                    </div>
-                </div>
-            </div>
-        </div>--%>
     </form>
 
 </body>

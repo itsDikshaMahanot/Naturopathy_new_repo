@@ -74,8 +74,13 @@
 
         @media only screen and (max-width:650px) {
             /* For mobile phones: */
-            .container, .container-fluid,  {
+            .container, .container-fluid {
                 width: 100%;
+            }
+
+            .alink{
+                align-items:center;
+                margin-left:50px;
             }
             
         }
@@ -137,11 +142,11 @@
                 </p>
             </div>
 
-            <div id="form" class="container row" style="text-align: center; padding-bottom: 4%; text-decoration: solid;">
+            <div id="form" class="container row " style="text-align: center; padding-bottom: 4%; text-decoration: solid;">
                 <div class="col-sm-3" style="color: darkblue; font-size: 150%; margin-left: 15%; margin-top: 2.5%; text-align: center; text-decoration: solid; font-family: 'Bookman Old Style'; font-style: unset;">
                     Click Here  <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </div>              
-                <a class="alink" href="https://docs.google.com/forms/d/e/1FAIpQLSdgbU-TcgCsCkpwzeOzgDYd6XngeNNvcI94c7-T02aFT1uYQw/viewform?usp=sf_link" style="font-size: 200%; padding: 2%; font-family: cursive;">Personalised Diet</a>
+                <a class="alink " href="https://docs.google.com/forms/d/e/1FAIpQLSdgbU-TcgCsCkpwzeOzgDYd6XngeNNvcI94c7-T02aFT1uYQw/viewform?usp=sf_link" style="font-size: 200%; padding: 2%; font-family: cursive;">Personalised Diet</a>
        <%--          <a class="btn btn-light " href="/pages/form.aspx" style="font-size: x-large;z-index: 2; position: relative;" aria-dropeffect="move" aria-expanded="undefined"> DIET </a>--%>
             </div>
             
